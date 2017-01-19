@@ -5,14 +5,14 @@
 from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
 
-print("mnist.test.images : ", mnist.test.images)
-print("mnist.test.labels : ", mnist.test.labels)
-print("mnist.test.images[0] : ", mnist.test.images[0])
-print("mnist.test.labels[0] : ", mnist.test.labels[0])
-print("len mnist.test.images : ", len(mnist.test.images))
-print("len mnist.test.labels : ", len(mnist.test.labels))
+# print("mnist.test.images : ", mnist.test.images)
+# print("mnist.test.labels : ", mnist.test.labels)
+# print("mnist.test.images[0] : ", mnist.test.images[0])
+# print("mnist.test.labels[0] : ", mnist.test.labels[0])
+# print("len mnist.test.images : ", len(mnist.test.images))
+# print("len mnist.test.labels : ", len(mnist.test.labels))
 
-exit()
+# exit()
 
 import tensorflow as tf
 
@@ -64,12 +64,12 @@ for i in range(1000):
 
 correct_prediction = tf.equal(tf.argmax(y,1), tf.argmax(y_,1))
 
-correct_prediction_res = sess.run(correct_prediction, feed_dict={x: mnist.test.images, y_: mnist.test.labels})
-print("correct_prediction_res : ", correct_prediction_res)
-
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
-idx_0_res_accuracy = sess.run(accuracy, feed_dict={x: mnist.test.images[0], y_: mnist.test.labels[0]})
-print("idx_0_res_accuracy : ", idx_0_res_accuracy)
+print(sess.run(accuracy, feed_dict={x: mnist.test.images, y_: mnist.test.labels}))
 
-# print(sess.run(accuracy, feed_dict={x: mnist.test.images, y_: mnist.test.labels}))
+correct_prediction_res = sess.run(correct_prediction, feed_dict={x: mnist.test.images[0], y_: mnist.test.labels[0]})
+print("correct_prediction_res : ", correct_prediction_res)
+
+accuracy_res = sess.run(accuracy, feed_dict={x: mnist.test.images[0], y_: mnist.test.labels[0]})
+print("accuracy_res : ", accuracy_res)

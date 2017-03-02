@@ -27,4 +27,21 @@ sess.run(init)
 for step in range(2001):
     sess.run(train, feed_dict={X:x_data, Y:y_data})
     if step % 20 == 0 :
-        print(step, sess.run(cost, feed_dict={X:x_data, Y:y_data}), sess.run(W))
+        print("step : ", step)
+        print("cost : ", sess.run(cost, feed_dict={X:x_data, Y:y_data})) # ???
+        # print("W : ", sess.run(W))
+        print("")
+
+
+print("")
+print("")
+print("")
+
+print("cost : ", sess.run(cost, feed_dict={X:x_data, Y:y_data})) # ???
+print("W : ", sess.run(W))
+
+correct_prediction = tf.equal(tf.floor(hypothesis + 0.5), Y)
+print("correct_prediction : ", sess.run(correct_prediction, feed_dict={X:x_data, Y:y_data}))
+
+accuracy = tf.reduce_mean(tf.cast(correct_prediction, "float"))
+print("accuracy : ", sess.run(accuracy, feed_dict={X:x_data, Y:y_data}))

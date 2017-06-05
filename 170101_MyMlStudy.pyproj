@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42a7621f-c19e-4521-98d5-608842784fb6}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>test.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|VisualStudio|hhd</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="hunkim-lecture\everything-is-op.py" />
+    <Compile Include="hunkim-lecture\hello.py" />
+    <Compile Include="hunkim-lecture\input_data.py" />
+    <Compile Include="hunkim-lecture\lab11-cnn-convolution-neural-network.py" />
+    <Compile Include="hunkim-lecture\linear-multi-variable-matrix-all.py" />
+    <Compile Include="hunkim-lecture\linear-multi-variable-matrix.py" />
+    <Compile Include="hunkim-lecture\linear-multi-variable.py" />
+    <Compile Include="hunkim-lecture\linear-np.py" />
+    <Compile Include="hunkim-lecture\linear-test.py" />
+    <Compile Include="hunkim-lecture\linear.py" />
+    <Compile Include="hunkim-lecture\logistic-classification.py" />
+    <Compile Include="hunkim-lecture\mnist-neural-network-with-tensor-board.py" />
+    <Compile Include="hunkim-lecture\mnist-neural-network.py" />
+    <Compile Include="hunkim-lecture\mnist-softmax.py" />
+    <Compile Include="hunkim-lecture\mnist.py" />
+    <Compile Include="hunkim-lecture\placaholder.py" />
+    <Compile Include="hunkim-lecture\rnn.py" />
+    <Compile Include="hunkim-lecture\softmax.py" />
+    <Compile Include="hunkim-lecture\xor-deep-network-with-tensor-board.py" />
+    <Compile Include="hunkim-lecture\xor-deep-network.py" />
+    <Compile Include="hunkim-lecture\xor-use-logistic-regression-wrong.py" />
+    <Compile Include="numpy-study\numpy-study.py" />
+    <Compile Include="plot_surface.py" />
+    <Compile Include="scatter.py" />
+    <Compile Include="tensorflow-first-step\clustering.py" />
+    <Compile Include="tensorflow-first-step\k-means-algoritm.py" />
+    <Compile Include="tensorflow-first-step\linear-regression.py" />
+    <Compile Include="tensorflow-first-step\single-neural-network.py" />
+    <Compile Include="test.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hunkim-lecture\train-logistic-classification.txt" />
+    <Content Include="hunkim-lecture\train-softmax.txt" />
+    <Content Include="hunkim-lecture\train.txt" />
+    <Content Include="hunkim-lecture\xor-deep-network.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="hunkim-lecture" />
+    <Folder Include="numpy-study" />
+    <Folder Include="tensorflow-first-step" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|VisualStudio|hhd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

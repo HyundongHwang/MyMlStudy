@@ -1,17 +1,25 @@
-import tensorflow as tf
 import numpy as np
+import sys, os
 
-xy = np.loadtxt("xor-deep-network.txt", unpack=True)
+scriptDir = os.path.dirname(os.path.realpath(__file__))
+dataFilePath = os.path.join(scriptDir, "xor-deep-network.txt")
+xy = np.loadtxt(dataFilePath, unpack=True)
 x_data = np.transpose(xy[0:-1])
 y_data = np.reshape(xy[-1], (4,1))
+
+
+
+import tensorflow as tf
 
 X = tf.placeholder(tf.float32)
 Y = tf.placeholder(tf.float32)
 
-W1 = tf.Variable(tf.random_uniform([2, 10], -1.0, 1.0))
-W2 = tf.Variable(tf.random_uniform([10, 1], -1.0, 1.0))
+hidden_layer_size = 10;
 
-b1 = tf.Variable(tf.zeros([10]), name="bias1")
+W1 = tf.Variable(tf.random_uniform([2, hidden_layer_size], -1.0, 1.0))
+W2 = tf.Variable(tf.random_uniform([hidden_layer_size, 1], -1.0, 1.0))
+
+b1 = tf.Variable(tf.zeros([hidden_layer_size]), name="bias1")
 b2 = tf.Variable(tf.zeros([1]), name="bias2")
 
 L2 = tf.sigmoid(tf.matmul(X, W1) + b1)
@@ -28,9 +36,9 @@ init = tf.global_variables_initializer()
 sess = tf.Session()
 sess.run(init)
 
-for step in range(2001):
+for step in range(3000):
     sess.run(train, feed_dict={X:x_data, Y:y_data})
-    if step % 20 == 0 :
+    if step % 100 == 0 :
         print("step : ", step)
         print("cost : ", sess.run(cost, feed_dict={X:x_data, Y:y_data})) # ???
         # print("W1 : ", sess.run(W1))

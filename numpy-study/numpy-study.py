@@ -37,4 +37,4 @@ print("data1.dtype : ", data1.dtype)
 
 
 
-num_str = np.array(['1.25, '0.99', '44', '11'], dtype=None)
+num_str = np.array(['1.25', '0.99', '44', '11'], dtype=None)

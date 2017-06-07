@@ -56,7 +56,7 @@ y = 10{x_{0}}^{2} + 20{x_{1}}^{2}
 - 원본 플로팅과 ML후 플로팅 결과를 비교함.
 
 ## 실행코드
-- [/nn-proof.py](/nn-proof.py)
+- https://github.com/HyundongHwang/MyMlStudy/blob/master/my-examples/nn-proof.py
 
 ## 실행결과
 

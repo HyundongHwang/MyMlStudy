@@ -40,6 +40,7 @@
     <Compile Include="hunkim-lecture\xor-deep-network-with-tensor-board.py" />
     <Compile Include="hunkim-lecture\xor-deep-network.py" />
     <Compile Include="hunkim-lecture\xor-use-logistic-regression-wrong.py" />
+    <Compile Include="my-examples\nn-proof.py" />
     <Compile Include="numpy-study\numpy-study.py" />
     <Compile Include="plot_surface.py" />
     <Compile Include="scatter.py" />
@@ -54,9 +55,11 @@
     <Content Include="hunkim-lecture\train-softmax.txt" />
     <Content Include="hunkim-lecture\train.txt" />
     <Content Include="hunkim-lecture\xor-deep-network.txt" />
+    <Content Include="my-examples\nn-proof.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="hunkim-lecture" />
+    <Folder Include="my-examples\" />
     <Folder Include="numpy-study" />
     <Folder Include="tensorflow-first-step" />
   </ItemGroup>

@@ -21,7 +21,7 @@ NN 트레이닝을 진행하는 과정에서 한개씩 plot을 그리면 어떤�
 <!--
 y = 10{x_{0}}^{2} + 20{x_{1}}^{2}
 -->
-![](https://latex.codecogs.com/gif.latex?y&space;=&space;10{x_{0}}^{2}&space;&plus;&space;20{x_{1}}^{2})
+![](https://latex.codecogs.com/gif.latex?y%20%3D%2010%7Bx_%7B0%7D%7D%5E%7B2%7D%20&plus;%2020%7Bx_%7B1%7D%7D%5E%7B2%7D)
 
 ## 실행과정
 - 원본 함수 설정
@@ -38,7 +38,7 @@ y = 10{x_{0}}^{2} + 20{x_{1}}^{2}
 - 원본 플로팅과 ML후 플로팅 결과를 비교함.
 
 ## 실행코드
-- /nn-proof.py
+- [/nn-proof.py](/nn-proof.py)
 
 ## 실행결과
 

@@ -94,18 +94,18 @@ cost :  124.091
 
 - 원본 데이타 플로팅
 
-![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/original.png)
+![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/original.png?1)
 
 - ML 트레이팅 cost별 플로팅
 
-![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/ML%20result%20step(0).png)
-![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/ML%20result%20step(1).png)
-![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/ML%20result%20step(2).png)
-![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/ML%20result%20step(3).png)
-![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/ML%20result%20step(10).png)
-![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/ML%20result%20step(20).png)
-![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/ML%20result%20step(30).png)
-![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/ML%20result%20step(100).png)
-![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/ML%20result%20step(200).png)
-![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/ML%20result%20step(300).png)
-![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/ML%20result%20step(999).png)
+![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/ML%20result%20step(0).png?1)
+![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/ML%20result%20step(1).png?1)
+![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/ML%20result%20step(2).png?1)
+![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/ML%20result%20step(3).png?1)
+![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/ML%20result%20step(10).png?1)
+![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/ML%20result%20step(20).png?1)
+![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/ML%20result%20step(30).png?1)
+![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/ML%20result%20step(100).png?1)
+![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/ML%20result%20step(200).png?1)
+![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/ML%20result%20step(300).png?1)
+![](https://hhdpublish.blob.core.windows.net/publish/nn-proof/ML%20result%20step(999).png?1)

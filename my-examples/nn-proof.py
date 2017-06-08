@@ -39,8 +39,9 @@ for v0 in x0:
 # original data plot
 fig = plt.figure()
 ax = fig.gca(projection='3d')
-x0, x1 = np.meshgrid(x0, x1)
-ax.plot_surface(x0, x1, y)
+x0x0, x1x1 = np.meshgrid(x0, x1)
+y = func(x0x0, x1x1)
+ax.plot_surface(x0x0, x1x1, y)
 ax.set_xlabel('x0')
 ax.set_ylabel('x1')
 ax.set_zlabel('y')

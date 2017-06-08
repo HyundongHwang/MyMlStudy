@@ -63,27 +63,27 @@ y = 10{x_{0}}^{2} + 20{x_{1}}^{2}
 ```powershell
 PS C:\project\170101_MyMlStudy\my-examples> python.exe .\nn-proof.py
 step :  0
-cost :  1.20204e+06
+cost :  1.35524e+06
 step :  1
-cost :  915330.0
+cost :  1.18295e+06
 step :  2
-cost :  536243.0
+cost :  915426.0
 step :  3
-cost :  297364.0
+cost :  545852.0
 step :  10
-cost :  211817.0
+cost :  199561.0
 step :  20
-cost :  94063.1
+cost :  119549.0
 step :  30
-cost :  64623.9
+cost :  63291.0
 step :  100
-cost :  1867.34
+cost :  5009.2
 step :  200
-cost :  711.1
+cost :  569.434
 step :  300
-cost :  724.752
+cost :  379.919
 step :  999
-cost :  172.36
+cost :  124.091
 ```
 
 ## 비교 플로팅

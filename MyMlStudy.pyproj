@@ -5,13 +5,12 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{42a7621f-c19e-4521-98d5-608842784fb6}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>test.py</StartupFile>
+    <StartupFile>deep-learning-from-scratch\temp.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <InterpreterId>Global|VisualStudio|hhd</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
@@ -19,6 +18,8 @@
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="deep-learning-from-scratch\hhd_utils.py" />
+    <Compile Include="deep-learning-from-scratch\temp.py" />
     <Compile Include="hunkim-lecture\everything-is-op.py" />
     <Compile Include="hunkim-lecture\hello.py" />
     <Compile Include="hunkim-lecture\input_data.py" />
@@ -58,13 +59,11 @@
     <Content Include="my-examples\nn-proof.md" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="deep-learning-from-scratch\" />
     <Folder Include="hunkim-lecture" />
     <Folder Include="my-examples\" />
     <Folder Include="numpy-study" />
     <Folder Include="tensorflow-first-step" />
-  </ItemGroup>
-  <ItemGroup>
-    <InterpreterReference Include="Global|VisualStudio|hhd" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>

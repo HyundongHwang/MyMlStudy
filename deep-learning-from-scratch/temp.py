@@ -462,6 +462,34 @@ if False:
 
 ################################################################################
 # p00_
+import sys
+import os
+import urllib
 import numpy as np
 import matplotlib.pyplot as plt
 import hhd_utils
+
+sys.path.append(os.pardir)
+
+# download
+# https://raw.githubusercontent.com/tensorflow/tensorflow/master/tensorflow/contrib/learn/python/learn/datasets/mnist.py
+
+req = urllib.request.urlopen("https://raw.githubusercontent.com/tensorflow/tensorflow/master/tensorflow/contrib/learn/python/learn/datasets/mnist.py")
+res = req.read()
+f = open("mnist.py", "w")
+f.write(res)
+f.close()
+
+import mnist
+
+#hhd_log("req.read()")
+
+
+#response =  ('https://wordpress.org/plugins/about/readme.txt')
+#data = response.read()
+ 
+## Write data to file
+#filename = "test.txt"
+#file_ = open(filename, 'w')
+#file_.write(data)
+#file_.close()
